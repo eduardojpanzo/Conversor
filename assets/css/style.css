@@ -4,15 +4,17 @@
     box-sizing: border-box;
 }
 :root{
-    --calc-bg-color:#181414;
-    --calc-expression-color:#fffffff0;
+    --calc-bg-color:#333;
+    --body-bg:#1b1b1b;
+    --calc-expression-color:#eee;
 }
 .light:root{
-    --calc-bg-color:#fffffff0;
-    --calc-expression-color:#181414;
+    --calc-bg-color:#eee;
+    --body-bg:#333;
+    --calc-expression-color:#1b1d21;
 }
 body{
-    background-color:#000;
+    background-color:var(--body-bg);
     font-family: 'Roboto', 'consolas', monospace;
 }
 main{
@@ -35,7 +37,7 @@ main{
     justify-content: space-between;
     align-items: center;
 }
-.menu_choice,
+.chage_mode,
 .menu_option{
     cursor: pointer;
 }
@@ -57,6 +59,25 @@ main{
 .greatness{
     display: flex;
     flex-direction: column;
+}
+.first_value input,
+.second_value input{
+    max-width: 250px;
+    margin: 5px 0;
+    border: none;
+    background-color: transparent;
+    font-size: 18pt;
+    outline: none;
+    color: var(--calc-expression-color);
+}
+
+.greatness select{
+    appearance: none;
+    outline: none;
+    font-size: medium;
+    padding: 10px;
+    background: var(--calc-bg-color);
+    color: var(--calc-expression-color);
 }
 
 .calc_keyboard{
@@ -82,6 +103,9 @@ main{
 }
 .keyboard_key:active{
     transform: scale(0.9);
+}
+.models{
+    display: none;
 }
 
 @media (min-width:425px) {

@@ -11,45 +11,40 @@
 <body>
     <main>
         <section class="converter_option">
-            <div class="menu_choice">
+            <div class="menu_option">
                 <i class="fas fa-bars"></i>
             </div>
 
-            <div class="chage_mode">
+            <div class="chage_mode" onclick="changeMode()">
                 <i class="fas fa-sun"></i>
             </div>
         </section>
 
         <section class="converter_screen">
             <div class="greatness">
-                <span class="first_value">2022</span>
-                <select name="first" id="first" class="first__greatness">
+                <span class="first_value">
+                    <input type="number">
+                </span>
+                <select name="first" id="first">
                 </select>
             </div>
             
             <div class="greatness">
-                <span class="second_value">2022</span>
-                <select name="second" id="second" class="second__greatness">
+                <span class="second_value">
+                    <input type="number">
+                </span>
+                <select name="second" id="second">
                 </select>
             </div>
         </section>
 
         <section class="calc_keyboard">
-            <div class="keyboard_key">CE</div>
-            <div class="keyboard_key">DEL</div>
-            <div class="keyboard_key">.</div>
-            <div class="keyboard_key">7</div>
-            <div class="keyboard_key">8</div>
-            <div class="keyboard_key">9</div>
-            <div class="keyboard_key">4</div>
-            <div class="keyboard_key">5</div>
-            <div class="keyboard_key">6</div>
-            <div class="keyboard_key">1</div>
-            <div class="keyboard_key">2</div>
-            <div class="keyboard_key">3</div>
-            <div class="keyboard_key">0</div>
-            <div class="keyboard_key">,</div>
         </section>
     </main>
+
+    <div class="models">
+        <div class="keyboard_key"></div>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
